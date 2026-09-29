@@ -1,15 +1,18 @@
 # CAMI Xochimilco · Sitio web
 
-Página de CAMI, Centro de Atención Médica Integral (Camino a Nativitas 7-D, Xaltocan, Xochimilco, CDMX).
+Sitio de CAMI, Centro de Atención Médica Integral (Camino a Nativitas 7-D, Xaltocan, Xochimilco, CDMX). Desde 1998.
 
-- `index.html`: el sitio completo, con el logotipo incrustado; funciona sin archivos adicionales.
-- `logo-cami.png`: logotipo en alta resolución (con fondo transparente) para otros usos.
+## Archivos
+
+- `index.html`: el sitio completo. El logotipo y los íconos van integrados, así que no necesita otros archivos.
+- `aviso-de-privacidad.html`: aviso de privacidad integral, enlazado desde el pie de página y el formulario.
+- `logo-cami.svg`: logotipo en vector, por si se necesita para otros usos.
 
 ## Editar datos
 
 - **WhatsApp:** en `index.html`, busca `const WHATSAPP` (formato `52` + 10 dígitos).
-- **Pendientes:** busca `[EDITAR]` (leyenda COFEPRIS: responsable sanitario y cédula profesional).
+- **Servicios:** en `index.html`, busca `const SERVICES`. El menú, las tarjetas, el formulario y las ventanas se generan desde esa lista.
 
 ## Publicación
 
-Se publica con GitHub Pages: *Settings → Pages → Deploy from a branch → `main` / `(root)`*.
+GitHub Pages: *Settings → Pages → Deploy from a branch → `main` / `(root)`*.

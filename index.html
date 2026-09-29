@@ -766,7 +766,8 @@ html.lenis,html.lenis body{height:auto}
             <div class="col-sm-8"><label class="form-label" for="f-name">Nombre completo</label><input class="form-control" id="f-name" name="nombre" autocomplete="name" required></div>
             <div class="col-sm-4"><label class="form-label" for="f-age">Edad del paciente</label><input class="form-control" id="f-age" name="edad" inputmode="numeric"></div>
             <div class="col-12"><label class="form-label" for="f-svc">Motivo de consulta</label><select class="form-select" id="f-svc" name="servicio"></select></div>
-            <div class="col-12"><label class="form-label" for="f-msg">Cuéntanos brevemente (opcional)</label><textarea class="form-control" id="f-msg" name="mensaje" rows="3"></textarea></div>
+            <div class="col-12"><label class="form-label" for="f-msg">Cuéntanos brevemente (opcional, sin datos médicos detallados)</label><textarea class="form-control" id="f-msg" name="mensaje" rows="3"></textarea></div>
+            <div class="col-12"><div class="form-check small"><input class="form-check-input" type="checkbox" id="f-ok" name="consent" required><label class="form-check-label text-muted-2" for="f-ok">He leído el <a href="aviso-de-privacidad.html" target="_blank" rel="noopener">aviso de privacidad</a> y acepto el uso de mis datos, incluidos los de salud, para agendar mi cita.</label><div class="invalid-feedback">Para continuar, acepta el aviso de privacidad.</div></div></div>
             <div class="col-12"><button class="btn btn-whatsapp w-100 btn-lg" type="submit"><i class="bi bi-whatsapp me-2" aria-hidden="true"><svg><use href="#bi-whatsapp"/></svg></i>Enviar por WhatsApp</button>
               <p class="small text-muted-2 text-center mt-2 mb-0">Tus datos se usan únicamente para agendar tu cita.</p></div>
           </div>
@@ -825,7 +826,7 @@ html.lenis,html.lenis body{height:auto}
     <hr class="my-4">
     <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small">
       <span>© <span id="yr"></span> CAMI · Centro de Atención Médica Integral · Xochimilco, CDMX</span>
-      <span>Responsable sanitario: Dr. Victor Manuel Álvarez Mares · Cédula profesional 2898194</span>
+      <span>Responsable sanitario: Dr. Victor Manuel Álvarez Mares · Cédula profesional 2898194 · <a href="aviso-de-privacidad.html" class="d-inline text-decoration-underline">Aviso de privacidad</a></span>
     </div>
   </div>
 </footer>
@@ -969,6 +970,8 @@ document.getElementById("leadForm").addEventListener("submit", e => {
   const f = e.target, nombre = f.nombre.value.trim();
   if (!nombre) { f.nombre.classList.add("is-invalid"); f.nombre.focus(); return; }
   f.nombre.classList.remove("is-invalid");
+  if (!f.consent.checked) { f.consent.classList.add("is-invalid"); f.consent.focus(); return; }
+  f.consent.classList.remove("is-invalid");
   let t = `Hola CAMI, mi nombre es ${nombre}.`;
   if (f.edad.value.trim()) t += ` Edad del paciente: ${f.edad.value.trim()}.`;
   t += ` Motivo de consulta: ${f.servicio.value}.`;
