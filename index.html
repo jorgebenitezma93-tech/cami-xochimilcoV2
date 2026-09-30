@@ -131,6 +131,19 @@ h1,h2,h3,h4,h5{font-weight:700;letter-spacing:-.02em;color:var(--ink)}
 .svc span{font-size:.85rem;color:var(--muted);margin-top:6px}
 .svc em{font-style:normal;font-size:.85rem;font-weight:600;color:var(--cami-azul);margin-top:auto;padding-top:12px}
 
+/* Estudio de la pisada (baropodometría) */
+.gait{background:#fff;border:1px solid var(--line);border-radius:28px;padding:22px;margin-bottom:56px}
+.gait-art{background:linear-gradient(180deg,#F3F8FC,#E9F2F9);border-radius:22px;padding:18px;display:grid;place-items:center}
+.gait-art svg{width:100%;max-width:420px;height:auto}
+.gait h3{font-size:1.6rem;margin:.4rem 0 .8rem}
+.gait .lead-sm{color:var(--muted);font-size:1.02rem}
+.gait-list{list-style:none;padding:0;margin:20px 0 0}
+.gait-list li{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.gait-list .n{flex:none;width:34px;height:34px;border-radius:10px;background:var(--cami-azul-050);color:var(--cami-azul);font-weight:700;display:grid;place-items:center;font-size:.9rem}
+.gait-list b{display:block}
+.gait-list span{color:var(--muted);font-size:.95rem}
+@media (min-width:768px){.gait{padding:40px}.gait h3{font-size:2rem}}
+
 /* Proceso */
 .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;height:100%}
 .step .n{width:40px;height:40px;border-radius:12px;background:var(--cami-azul);color:#fff;font-weight:700;display:grid;place-items:center;margin-bottom:14px}
@@ -262,6 +275,19 @@ html.lenis,html.lenis body{height:auto}
 .specs b{display:block;font-size:1.2rem;letter-spacing:-.02em;margin-bottom:6px}
 .specs span{color:var(--muted)}
 
+/* Estudio de la pisada (baropodometría) */
+.gait{background:#fff;border:1px solid var(--line);border-radius:28px;padding:22px;margin-bottom:56px}
+.gait-art{background:linear-gradient(180deg,#F3F8FC,#E9F2F9);border-radius:22px;padding:18px;display:grid;place-items:center}
+.gait-art svg{width:100%;max-width:420px;height:auto}
+.gait h3{font-size:1.6rem;margin:.4rem 0 .8rem}
+.gait .lead-sm{color:var(--muted);font-size:1.02rem}
+.gait-list{list-style:none;padding:0;margin:20px 0 0}
+.gait-list li{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.gait-list .n{flex:none;width:34px;height:34px;border-radius:10px;background:var(--cami-azul-050);color:var(--cami-azul);font-weight:700;display:grid;place-items:center;font-size:.9rem}
+.gait-list b{display:block}
+.gait-list span{color:var(--muted);font-size:.95rem}
+@media (min-width:768px){.gait{padding:40px}.gait h3{font-size:2rem}}
+
 /* Proceso */
 .proceso{overflow:hidden}
 .track{display:flex;flex-direction:row;width:max-content;gap:14px;padding:0 16px}
@@ -303,7 +329,7 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bi-activity" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/></symbol><symbol id="bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></symbol><symbol id="bi-arrow-up-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></symbol><symbol id="bi-bandaid" viewBox="0 0 16 16"><path d="M14.121 1.879a3 3 0 0 0-4.242 0L8.733 3.026l4.261 4.26 1.127-1.165a3 3 0 0 0 0-4.242M12.293 8 8.027 3.734 3.738 8.031 8 12.293zm-5.006 4.994L3.03 8.737 1.879 9.88a3 3 0 0 0 4.241 4.24l.006-.006 1.16-1.121ZM2.679 7.676l6.492-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492z"/>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bi-graph-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"/></symbol><symbol id="bi-activity" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/></symbol><symbol id="bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></symbol><symbol id="bi-arrow-up-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></symbol><symbol id="bi-bandaid" viewBox="0 0 16 16"><path d="M14.121 1.879a3 3 0 0 0-4.242 0L8.733 3.026l4.261 4.26 1.127-1.165a3 3 0 0 0 0-4.242M12.293 8 8.027 3.734 3.738 8.031 8 12.293zm-5.006 4.994L3.03 8.737 1.879 9.88a3 3 0 0 0 4.241 4.24l.006-.006 1.16-1.121ZM2.679 7.676l6.492-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492z"/>
   <path d="M5.56 7.646a.5.5 0 1 1-.706.708.5.5 0 0 1 .707-.708Zm1.415-1.414a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707M8.39 4.818a.5.5 0 1 1-.708.707.5.5 0 0 1 .707-.707Zm0 5.657a.5.5 0 1 1-.708.707.5.5 0 0 1 .707-.707ZM9.803 9.06a.5.5 0 1 1-.707.708.5.5 0 0 1 .707-.707Zm1.414-1.414a.5.5 0 1 1-.706.708.5.5 0 0 1 .707-.708ZM6.975 9.06a.5.5 0 1 1-.707.708.5.5 0 0 1 .707-.707ZM8.39 7.646a.5.5 0 1 1-.708.708.5.5 0 0 1 .707-.708Zm1.413-1.414a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707"/></symbol><symbol id="bi-bullseye" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
   <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
   <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
@@ -555,7 +581,7 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
     <div class="row row-cols-2 row-cols-md-4 g-0">
       <div class="col item"><b>Desde <span data-count="1998" data-plain>1998</span></b><span>Más de 25 años cuidando de ti</span></div>
       <div class="col item"><b><span data-count="4.3" data-dec="1">4.3</span> <span class="stars">★</span></b><span>20 opiniones en Google</span></div>
-      <div class="col item"><b><span data-count="11">11</span> servicios</b><span>Atención integral en un lugar</span></div>
+      <div class="col item"><b><span data-count="12">12</span> servicios</b><span>Atención integral en un lugar</span></div>
       <div class="col item"><b>Lun a Sáb</b><span>Turno matutino y vespertino</span></div>
     </div>
   </div>
@@ -660,9 +686,53 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
 <section class="section bg-soft product" id="plantillas">
   <div class="container">
     <div class="section-head">
-      <span class="kicker reveal">Plantillas ortopédicas</span>
+      <span class="kicker reveal">Estudio de la pisada y plantillas</span>
       <h2 class="reveal">Cada paso, en su lugar.</h2>
-      <p class="reveal">Plantillas a la medida que corrigen tu pisada y alivian el dolor desde la base: tus pies.</p>
+      <p class="reveal">Primero conocemos todo sobre tu marcha; después diseñamos plantillas a tu medida que alivian el dolor desde la base: tus pies.</p>
+    </div>
+
+    <div class="gait" id="estudio-pisada">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <span class="kicker reveal">Estudio baropodométrico</span>
+          <h3 class="reveal">Conocemos todo sobre tu marcha.</h3>
+          <p class="lead-sm reveal">Con un estudio baropodométrico, un análisis estático y dinámico, y otros estudios realizados con equipo especializado, evaluamos cómo apoyas y cómo caminas para darte un diagnóstico completo.</p>
+          <ul class="gait-list">
+            <li class="reveal"><span class="n">1</span><div><b>Análisis estático</b><span>De pie sobre una plataforma con múltiples sensores, medimos la presión en cada punto de la planta y tu superficie de apoyo.</span></div></li>
+            <li class="reveal"><span class="n">2</span><div><b>Análisis dinámico</b><span>Al caminar sobre la plataforma, registramos cómo cambian las presiones en cada paso.</span></div></li>
+            <li class="reveal"><span class="n">3</span><div><b>Centro de gravedad y carga</b><span>Vemos la línea de empuje de tu cuerpo y cómo se reparte tu peso entre ambas piernas.</span></div></li>
+            <li class="reveal"><span class="n">4</span><div><b>Diagnóstico completo</b><span>Con los resultados te explicamos qué ocurre en tu pisada y diseñamos tu tratamiento o tus plantillas.</span></div></li>
+          </ul>
+          <div class="d-flex flex-column flex-sm-row gap-2 mt-4 reveal">
+            <a class="btn btn-primary js-wa" data-msg="Hola CAMI, quiero agendar un estudio de la pisada (baropodometría)." href="#contacto">Agendar estudio de la pisada</a>
+            <button class="btn btn-outline-primary" type="button" data-open="pisada">Más información</button>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="gait-art" aria-hidden="true">
+            <svg id="gaitMap" viewBox="0 0 520 600" width="420" height="485">
+              <defs>
+                <clipPath id="footL"><path d="M120 10 C 176 10 214 64 218 140 C 222 214 200 262 192 312 C 184 364 198 414 194 462 C 190 528 158 566 112 566 C 66 566 38 528 40 468 C 42 410 62 370 60 318 C 58 256 26 214 24 150 C 22 68 64 10 120 10 Z"/></clipPath>
+                <radialGradient id="hot"><stop offset="0" stop-color="#E53935"/><stop offset=".35" stop-color="#FB8C00"/><stop offset=".6" stop-color="#FDD835"/><stop offset=".82" stop-color="#43A047" stop-opacity=".8"/><stop offset="1" stop-color="#1E88E5" stop-opacity="0"/></radialGradient>
+                <radialGradient id="warm"><stop offset="0" stop-color="#FDD835"/><stop offset=".55" stop-color="#7CB342" stop-opacity=".85"/><stop offset="1" stop-color="#1E88E5" stop-opacity="0"/></radialGradient>
+              </defs>
+              <g id="footGroup" transform="translate(270 10) scale(.958)">
+                  <path d="M120 10 C 176 10 214 64 218 140 C 222 214 200 262 192 312 C 184 364 198 414 194 462 C 190 528 158 566 112 566 C 66 566 38 528 40 468 C 42 410 62 370 60 318 C 58 256 26 214 24 150 C 22 68 64 10 120 10 Z" fill="#0D3B66"/>
+                  <g clip-path="url(#footL)">
+                    <ellipse class="blob" cx="116" cy="484" rx="92" ry="86" fill="url(#hot)"/>
+                    <ellipse class="blob" cx="150" cy="170" rx="70" ry="58" fill="url(#hot)"/>
+                    <ellipse class="blob" cx="78" cy="190" rx="58" ry="52" fill="url(#warm)"/>
+                    <ellipse class="blob" cx="170" cy="330" rx="40" ry="70" fill="url(#warm)" opacity=".7"/>
+                    <ellipse class="blob" cx="140" cy="60" rx="46" ry="40" fill="url(#warm)"/>
+                  </g>
+                  <path class="cop" d="M112 540 C 130 440 168 330 158 230 C 152 160 140 110 136 60" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 14"/>
+              </g>
+              <use href="#footGroup" transform="translate(520 0) scale(-1 1)"/>
+              <line class="axis" x1="260" y1="30" x2="260" y2="560" stroke="#0077C0" stroke-width="2" stroke-dasharray="6 8" opacity=".5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="product-stage" aria-hidden="true">
       <div class="product-glow"></div>
@@ -809,6 +879,8 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
         <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">No es indispensable. Si tienes estudios (radiografías, resonancias) o indicaciones de otro médico, tráelos a tu consulta.</div></div></div>
       <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5" aria-expanded="false">¿Cuántas sesiones voy a necesitar?</button></h3>
         <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Depende de cada paciente. Después de la valoración te indicamos un número estimado de sesiones y los objetivos a alcanzar.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q7" aria-expanded="false">¿Qué es el estudio baropodométrico?</button></h3>
+        <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Es un estudio de la pisada: caminas y permaneces de pie sobre una plataforma con sensores que mide la presión en cada punto de tus plantas, tu superficie de apoyo, tu centro de gravedad y cómo repartes el peso entre ambas piernas. Es rápido y no causa ninguna molestia.</div></div></div>
       <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6" aria-expanded="false">Tengo diabetes, ¿cada cuánto debo revisar mis pies?</button></h3>
         <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Con regularidad, aunque no tengas molestias. Si notas heridas que no cierran, cambios de color, hormigueo o pérdida de sensibilidad, agenda una cita lo antes posible.</div></div></div>
     </div>
@@ -899,8 +971,11 @@ const SERVICES = [
   { id: "homeo", icon: "bi-capsule", kind: "Terapia complementaria", name: "Homeopatía", short: "Tratamiento complementario e individual.",
     what: "Una opción de tratamiento complementario indicada después de una valoración médica, con un enfoque individual para cada paciente y coordinada con el resto de tu tratamiento.",
     helps: ["Enfoque individual", "Complemento a tu tratamiento", "Valoración médica previa"] },
+  { id: "pisada", icon: "bi-graph-up", kind: "Biomecánica", name: "Estudio de la pisada (baropodometría)", short: "Análisis estático y dinámico de tu marcha.",
+    what: "Con una plataforma electrónica de múltiples sensores analizamos la distribución de las presiones en la planta de tus pies y tu superficie de apoyo, de pie y al caminar, así como la línea de tu centro de gravedad y cómo se reparte tu peso entre ambas piernas. Con esto te damos un diagnóstico completo de tu marcha.",
+    helps: ["Dolor de pies, rodillas o cadera", "Pie plano o cavo", "Mala postura", "Diseño de plantillas a la medida", "Deportistas"] },
   { id: "plantillas", icon: "bi-rulers", kind: "Ortopedia", name: "Plantillas ortopédicas", short: "A la medida, para corregir la pisada.",
-    what: "Plantillas hechas a la medida después de evaluar tu pisada. Alinean el pie y distribuyen mejor el peso para aliviar el dolor de pies, rodillas, cadera y espalda.",
+    what: "Plantillas hechas a la medida a partir de tu estudio de la pisada (baropodometría). Alinean el pie y distribuyen mejor el peso para aliviar el dolor de pies, rodillas, cadera y espalda.",
     helps: ["Pie plano o cavo", "Dolor de talón", "Dolor de rodilla y espalda", "Mala postura"] }
 ];
 
@@ -1070,6 +1145,11 @@ document.getElementById("leadForm").addEventListener("submit", e => {
   // Heridas: ilustración que flota y se acerca
   gsap.utils.toArray("#cells .cell").forEach((c, i) => gsap.to(c, { y: i % 2 ? 10 : -10, x: i % 3 ? 6 : -6, duration: 3 + i * .6, yoyo: true, repeat: -1, ease: "sine.inOut" }));
   gsap.fromTo("#cells", { scale: .8, rotate: -8, opacity: .3, transformOrigin: "50% 50%" }, { scale: 1, rotate: 0, opacity: 1, ease: "none", scrollTrigger: { trigger: "#heridas", start: "top 85%", end: "center 55%", scrub: 1 } });
+
+  // Estudio de la pisada: las zonas de presión "laten" y la línea de empuje se dibuja
+  gsap.utils.toArray("#gaitMap .blob").forEach((b, i) => gsap.to(b, { scale: 1.12, opacity: .75, svgOrigin: b.getAttribute("cx") + " " + b.getAttribute("cy"), duration: 1.4 + (i % 3) * .4, yoyo: true, repeat: -1, ease: "sine.inOut" }));
+  gsap.fromTo("#gaitMap .cop", { strokeDashoffset: 480 }, { strokeDashoffset: 0, ease: "none", scrollTrigger: { trigger: "#estudio-pisada", start: "top 80%", end: "center 45%", scrub: 1 } });
+  gsap.from("#gaitMap", { y: 40, opacity: 0, duration: 1, ease: "power3.out", scrollTrigger: { trigger: "#estudio-pisada", start: "top 80%" } });
 
   // Plantilla: gira y se asienta como producto
   gsap.fromTo("#insole", { rotate: -38, rotateX: 38, scale: .78, y: 100, opacity: .2 }, { rotate: -14, rotateX: 0, scale: 1, y: 0, opacity: 1, ease: "none", scrollTrigger: { trigger: ".product-stage", start: "top 95%", end: "center 50%", scrub: 1 } });
